@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Professor Hunt</title>
+</head>
+
+<!-- O atributo onresize chama um função que altera o tamanho da tela -->
+<body onresize="ajustaTamanhoTela()">
+    <div class="mostrador p-2 bg-light border border-light fixed-bottom">
+        <div class="vidas">
+            <img src="./imagens/coracao_cheio.png" alt="" id="vida1">
+            <img src="./imagens/coracao_cheio.png" alt="" id="vida2">
+            <img src="./imagens/coracao_cheio.png" alt="" id="vida3">
+        </div>
+
+        <div class="relogio font-weight-bold">
+            Tempo Restante: <span id="cronometro"></span>
+        </div>
+    </div>
+
+
+    <script src="jogo.js"></script>
+</body>
+
+</html>
